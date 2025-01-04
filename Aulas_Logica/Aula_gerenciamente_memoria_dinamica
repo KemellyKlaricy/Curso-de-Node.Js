@@ -1,0 +1,73 @@
+//redefine o valor da constante: Se quiser redefinir o valor da constante precisa ser "let" no lugar de "const"
+let numero = 20
+console.log(numero)
+numero = 9
+console.log(numero)
+
+//É impossivel inicar uma constante sem atribuição
+
+//Variavel constante inteiro
+const numero2 = 200 // Positivo
+console.log(numero2)
+
+const numeroNegativo = -3 // Negativo
+console.log(numeroNegativo)
+
+//Variavel constante de String
+const nome = 'Kemelly'
+console.log('Oi', nome, '!')
+console.log(`Oi, ${nome} !`) //formatado para que fique bonito
+
+//Variavel constante de numero real
+const numeroFavorito = 5.8 //numero real
+console.log(`Seu numero favorito é: ${numeroFavorito}`)
+
+//Variavel constante de boolean
+const estaChovendo = false
+console.log(`Condição do clima é chuvoso: ${estaChovendo}`)
+
+//Variavel constante NULL - A falta de um valor 
+const qualquerCoisa = null
+console.log(qualquerCoisa)
+
+//PROPRIEDADE GLOBAL NaN
+    //NaN é um valor especial que significa Not-A-Number (não é um número).
+let numero1
+const numero3 = 30
+const soma1 = 'ab' - numero3
+//const soma = 'ab' + numero3
+console.log(soma1)
+
+//OPERAÇÕES EXISTENTES
+const numero4 = 10
+const numero5 = 30
+const numero6 = 2
+const numero7 = 3
+    //Criação das constantes de operação
+const soma = numero4 + numero5
+const subtracao = numero5 - numero4
+const mulplicacao = numero4 * numero5
+const divisao = numero5 / numero4
+const elevado = numero6 ** numero7
+const restoDaDivisao = numero7 % numero6
+    //Mostrar resultados
+console.log({soma})
+console.log({subtracao})
+console.log({mulplicacao})
+console.log({divisao})
+console.log({elevado})
+console.log({restoDaDivisao})
+console.log()
+console.log(`----------------------------------------------`)
+
+//VETORES
+    //Ideal todos os elementos sejam do mesmo formato
+const nomeDeAlunos = ['Joana','João', 'Gabriela', 'Gabriel'] //Array
+console.log(nomeDeAlunos)
+const numerosPrimos = [1,2,3,5,7]
+console.log(numerosPrimos)
+
+
+
+
+

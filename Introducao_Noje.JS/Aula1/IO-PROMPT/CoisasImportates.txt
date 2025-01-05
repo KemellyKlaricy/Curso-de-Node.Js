@@ -1,0 +1,35 @@
+FILEPATH---------------------------------
+filePath é o caminho do arquivo que será manipulado. Ele pode ser absoluto, como `/usr/local/file.txt`, ou relativo, como `./data/file.txt`. Esse caminho é essencial para localizar o arquivo no sistema.  
+
+FS-----------------------------------------
+O módulo fs é responsável por todas as operações de sistema de arquivos. Ele deve ser importado no código para ser utilizado, como em `const fs = require('fs')`.  
+
+WRITEFILE--------------------------------
+A função writeFile permite criar ou sobrescrever arquivos. Ela recebe três argumentos principais: o caminho do arquivo, o conteúdo que será escrito e uma função de retorno que trata erros ou confirma o sucesso da operação.  
+
+Exemplo de uso:  
+
+```javascript
+fs.writeFile('example.txt', 'Hello world', (err) => {
+  if (err) {
+    console.log('Erro ao escrever no arquivo');
+  } else {
+    console.log('Arquivo criado com sucesso');
+  }
+});
+```
+
+READFILE ---------------------
+A função readFile é usada para ler o conteúdo de um arquivo. Ela também recebe três argumentos: o caminho do arquivo, o formato do texto (geralmente `utf-8`) e uma função de retorno para lidar com os dados ou erros.  
+
+Exemplo de uso:  
+
+```javascript
+fs.readFile('example.txt', 'utf-8', (err, data) => {
+  if (err) {
+    console.log('Erro ao ler o arquivo');
+  } else {
+    console.log('Conteúdo do arquivo', data);
+  }
+});
+```

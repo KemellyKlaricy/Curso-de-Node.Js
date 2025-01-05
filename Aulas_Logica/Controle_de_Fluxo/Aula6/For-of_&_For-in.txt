@@ -1,0 +1,5 @@
+Quando se deve usar For-of?
+    Quando for manipular Arrays
+
+Quando se deve usar For-in?
+    Quando for manipular objetos

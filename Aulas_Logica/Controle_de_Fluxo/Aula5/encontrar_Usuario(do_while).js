@@ -5,7 +5,7 @@ let contador2 = 0
 
 do {
     const usuarioAtual = listaContatos[contador2]
-    if(usuarioAtual.startsWith('Z')){//Metodo que se a primeira letra for a que estiver dentro vai da verdadeiro
+    if(usuarioAtual.startsWith('Z')){ //Metodo que se a primeira letra for a que estiver dentro vai da verdadeiro
         encontrouUsuarioOuAtingiuFimDaLista = true
         console.log('Usuario encontrado:', usuarioAtual)
     }

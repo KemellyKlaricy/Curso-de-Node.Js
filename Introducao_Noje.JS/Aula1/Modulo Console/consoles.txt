@@ -1,0 +1,78 @@
+1. `console.dir`
+O método `console.dir` é usado para exibir um objeto em formato legível. Ele é especialmente útil quando você precisa inspecionar um objeto ou estrutura de dados complexa.
+
+- Sintaxe:  
+  ```javascript
+  console.dir(obj, options)
+  ```
+- Parâmetros:
+  - `obj`: O objeto a ser inspecionado.
+  - `options`: (Opcional) Um objeto para configurar a exibição (exemplo: profundidade de objetos aninhados).
+
+- Exemplo:
+  ```javascript
+  const obj = { name: "Kemelly", details: { age: 25, city: "São Paulo" } };
+  console.dir(obj, { depth: 1 }); // Mostra até o primeiro nível de aninhamento.
+  ```
+
+---
+
+2. `console.table`
+O método `console.table` organiza e exibe dados em formato de tabela no console. É ideal para visualizar arrays ou objetos de forma clara e tabular.
+
+- Sintaxe:
+  ```javascript
+  console.table(data, columns)
+  ```
+- Parâmetros:  
+  - `data`: Array ou objeto a ser exibido.
+  - `columns`: (Opcional) Lista de propriedades a serem exibidas (apenas para objetos ou arrays de objetos).
+
+- Exemplo:
+  ```javascript
+  const users = [
+    { name: "Kemelly", age: 25 },
+    { name: "João", age: 30 }
+  ];
+  console.table(users);
+  ```
+
+---
+
+3. `console.time` e `console.timeEnd`
+Os métodos `console.time` e `console.timeEnd` são usados para medir o tempo de execução de um código ou operação. Você pode criar "temporizadores" nomeados para diferentes partes do código.
+
+- Sintaxe:
+  ```javascript
+  console.time(label);
+  // Código que será medido
+  console.timeEnd(label);
+  ```
+- Parâmetros:
+  - `label`: O nome do temporizador. Deve ser o mesmo em ambos os métodos para funcionar corretamente.
+
+- Exemplo
+  ```javascript
+  console.time("Loop");
+  for (let i = 0; i < 1000000; i++); // Simula um código pesado
+  console.timeEnd("Loop");
+  ```
+
+---
+
+4. `console.log`
+O método mais comum do objeto `console`, usado para exibir mensagens ou valores no terminal. Pode ser utilizado para depuração ou simples saída de dados.
+
+- Sintaxe: 
+  ```javascript
+  console.log(...data)
+  ```
+- Parâmetros: 
+  - `...data`: Um ou mais valores a serem exibidos.
+
+- Exemplo:
+  ```javascript
+  console.log("Bem-vindo ao Node.js!");
+  const nome = "Kemelly";
+  console.log("Usuário:", nome);
+  ```
